@@ -7,11 +7,13 @@ $(document).ready(() => {
             console.log(status);
         })
         $('.load-button').hide();
-        $('.hide-load-data').show();
+        $('.hide-load-button').show();
     });
 
-    $('.hide-load-data').click(() => {
+    $('.hide-load-button').click(() => {
         $('.load-text').hide();
+        $('.hide-load-button').hide();
+        $('.load-button').show();
     })
 
     $('.get-button').click(() => {
