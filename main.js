@@ -15,9 +15,11 @@ $(document).ready(() => {
     })
 
     $('.get-button').click(() => {
-        $('.get-text').get('https://swapi.co/api/people/2/', (res, status) => {
+        console.log('get-button has been clicked')
+        $.get('https://swapi.co/api/people/2/', (res, status) => {
             console.log(res);
             console.log(status);
+            alert(`Data: ${res.name} \nStatus: ${status}`);
         })
     })
 });
